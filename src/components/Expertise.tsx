@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { BookOpen, Music, Utensils, Moon } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Обучение и развитие",
+    description: "Занятия по авторским программам развивают речь, логику, творческое мышление и подготавливают к школе в игровой форме.",
+    icon: BookOpen,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Творчество и музыка",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Рисование, лепка, пение и танцы — каждый день наполнен творчеством. Мы помогаем раскрыть таланты с самого раннего возраста.",
+    icon: Music,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Питание и здоровье",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Сбалансированное домашнее питание 4 раза в день. Меню составлено диетологом, все продукты свежие и проверенные.",
+    icon: Utensils,
   },
   {
-    title: "Градостроительство",
+    title: "Дневной сон и отдых",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Уютные спальни с ортопедическими кроватками. Режим дня выстроен так, чтобы ребёнок был бодрым, счастливым и здоровым.",
+    icon: Moon,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Что мы предлагаем</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Всё лучшее</HighlightedText> — для
             <br />
-            практикой
+            вашего ребёнка
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Наши педагоги с многолетним опытом создают тёплую и развивающую атмосферу, в которой каждый ребёнок чувствует себя особенным.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function Expertise() {
                     transitionDelay: `${index * 150}ms`,
                   }}
                 >
-                  <Icon className="w-10 h-10 mb-4 text-foreground" strokeWidth={1.25} />
+                  <Icon className="w-10 h-10 mb-4 text-foreground" strokeWidth={1.25} size={40} />
                 </div>
                 <h3 className="text-xl font-medium mb-4">{area.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{area.description}</p>

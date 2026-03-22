@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Забота и тепло",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Каждый ребёнок — личность. Мы создаём атмосферу принятия, где малыш чувствует себя любимым, в безопасности и готов открывать мир.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Развитие через игру",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Игра — главный язык детства. Наши программы построены так, чтобы знания приходили естественно, через творчество, движение и любопытство.",
   },
   {
-    title: "Естественная динамика",
+    title: "Партнёрство с родителями",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Мы работаем в тесном контакте с семьями. Открытое общение, еженедельные отчёты и прозрачность — основа нашего доверия.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Безопасная среда",
+    description: "Уютные, продуманные пространства с безопасным оборудованием и бережным персоналом. Ваш ребёнок под заботливым присмотром каждую минуту.",
   },
 ]
 
@@ -55,16 +55,16 @@ export function Philosophy() {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Воспитание с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>душой</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
-                src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
-                className="opacity-90 relative z-10 w-auto"
+                src="https://cdn.poehali.dev/projects/794f222f-10b5-4f5e-bc99-bd4533b8c410/files/dea967d2-4d31-47cc-b3c7-1834a471e784.jpg"
+                alt="Уютная группа детского сада"
+                className="opacity-90 relative z-10 w-auto rounded-lg"
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ export function Philosophy() {
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Детский сад — это больше, чем присмотр. Это первые шаги в большой мир. Мы создаём среду, где каждый ребёнок раскрывает свой потенциал.
             </p>
 
             {philosophyItems.map((item, index) => (
